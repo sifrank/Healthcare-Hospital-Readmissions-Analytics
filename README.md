@@ -78,12 +78,14 @@ Applied SQL transformations to improve data consistency and reliability, includi
 
 ### 3. Analytical Queries
 
-Developed SQL queries to explore and evaluate the cleaned healthcare dataset, including:
+Developed analytical T-SQL queries to explore and evaluate the cleaned healthcare dataset, including:
 
-- Hospital readmission performance.
-- Clinical condition comparisons.
-- Reporting-period analysis.
-- Data summaries and aggregations.
+- Overall dataset profiling: record counts, unique hospitals, states, and readmission measures.
+- State-level comparisons of average excess readmission rates.
+- Identification of the 20 highest excess-readmission-rate hospital-measure records.
+- Condition-level comparisons of discharges, readmissions, and excess readmission rates.
+- Predicted-versus-expected readmission rate comparisons.
+- Reporting-period summaries and hospital counts.
 
 ## Data Transformation: Raw vs. Cleaned Data
 
@@ -104,12 +106,12 @@ SQL transformations were applied to standardize fields, convert data types, and 
 ## Repository Structure
 
 ```text
-healthcare-hrrp-powerbi-analytics/
+Healthcare-Hospital-Readmissions-Analytics/
 │
 ├── SQL/
 │   ├── 01_create_tables.sql
-│   ├── 02_clean_hrpp_data.sql
-│   └── 03_analysis_queries.sql
+│   ├── 02_clean_hrrp_data
+│   └── 03_analysis_queries
 │
 ├── Screenshots/
 │   ├── HRRP_Raw_Data.png
